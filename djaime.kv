@@ -1,0 +1,77 @@
+<Janela>
+	orientation: 'vertical'
+	size_hint_y:None
+	size_hint_x:None
+	width:500
+	height:500
+	padding: 50
+	spacing:10
+	TextInput:
+		id:n1
+	TextInput:
+		id:n2
+	
+	Button:
+		id:comraio
+		text:'Com Raio' 
+		font_size:30
+		on_release: 
+			r = float(n1.text)
+            a = float(n2.text)
+            d = r + r
+            cret = 3.14 * d
+            acirc = 6.28 * (r*r)
+            aret = cret * a
+            acil = aret + acirc
+            cret = str(cret)
+            acirc = str(acirc)
+            aret = str(aret)
+            acil = str(acil)
+            questao.text = str("Cret: " + cret + " Acirc: " + acirc + " Aret: " + aret + " Acil: " + acil)
+            resposta.text = str(float(acil))
+	Button:
+		id:semraio
+		text:'Sem Raio' 
+		font_size:30 
+		on_release:
+			d = float(n1.text)
+			r = d / 2
+            a = float(n2.text)
+            cret = 3.14 * d
+            acirc = 6.28 * (r*r)
+            aret = cret * a
+            acil = aret + acirc
+            cret = str(cret)
+            acirc = str(acirc)
+            aret = str(aret)
+            acil = str(acil)
+            questao.text = str("Cret: " + cret + " Acirc: " + acirc + " Aret: " + aret + " Acil: " + acil)
+            resposta.text = str(float(acil))
+	Button:
+		id:volumecomraio
+		text:'Volume Com Raio' 
+		font_size:20 
+		on_release:
+            r = float(n1.text)
+            a = float(n2.text)
+            r = r * r
+            v = 3.14 * r * a
+            resposta.text = str(float(v))
+	Button:
+		id:volumesemraio
+		text:'Volume Sem Raio' 
+		font_size:20 
+		on_release:
+		    r = float(n1.text)
+            a = int(n2.text)
+            r = r / 2
+            r = r * r
+            v = 3.14 * r * a
+            resposta.text = str(float(v))
+	Label:
+		text:'conta'
+		id:questao
+	Label:
+		text:'resposta'
+		id:resposta
+		
