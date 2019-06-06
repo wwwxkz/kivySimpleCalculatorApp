@@ -1,5 +1,7 @@
 # kivySimpleCalculatorApp
 
+![](https://github.com/wxkz/kivySimpleCalculatorApp/blob/master/README/example.gif)
+
 how to install:
   * sudo add-apt-repository ppa:kivy-team/kivy
   * sudo apt-get update
