@@ -26,3 +26,5 @@ how to install:
 
 Run: 
   * python3 main.py
+  
+![](https://github.com/wxkz/kivySimpleCalculatorApp/blob/master/README/example.gif)
